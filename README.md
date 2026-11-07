@@ -2,13 +2,11 @@
 
 **A React movie and TV streaming UI starter with TypeScript, TanStack Query and cinematic carousels.**
 
-![React Movie UI illustrated project cover](docs/images/cover.svg)
-
-[راهنمای فارسی](README.fa.md) · [Design & asset credits](CREDITS.md) · [MIT implementation license](LICENSE)
+[راهنمای فارسی](README.fa.md) · [Asset licenses](CREDITS.md) · [MIT implementation license](LICENSE)
 
 Build a movie discovery interface, explore animated sliders, or adapt the components for your own catalog. This is a complete Vite starter app: clone it, customize it and deploy the static build. No API key is needed to run the demo.
 
-The cover is an illustration of the project, not a browser screenshot. The bundled movie artwork consists of original abstract SVG placeholders.
+The bundled movie artwork consists of original abstract SVG placeholders.
 
 ## Features
 
@@ -101,11 +99,9 @@ The 23-title catalog is a manually curated snapshot. Scores, season totals, epis
 
 Watchlists are stored in the current browser under `react-movie-ui-watchlist`; there is no account or server synchronization. This is a web interface, with no production streaming backend, subscription system, Flutter application or television app included.
 
-## Design credit and license
+## License
 
-The visual reference is **[Video streaming web UI design by Roohi Koohi](https://dribbble.com/shots/26926490-Video-streaming-web-ui-design)**. This project implements a React interface based on that reference and adds application behavior and title pages. It is not affiliated with or endorsed by the designer.
-
-The implementation and original placeholder SVGs are provided under [MIT](LICENSE). The referenced design, film trademarks and third-party content are not granted rights by that license. Attribution does not substitute for permission to reuse the referenced design. Fonts and video retain their own licenses; see [CREDITS.md](CREDITS.md) and [catalog sources](CATALOG-SOURCES.md).
+The implementation and original placeholder SVGs are provided under [MIT](LICENSE). Film trademarks and third-party content are not granted rights by that license. Fonts and video retain their own licenses; see [asset licenses](CREDITS.md) and [catalog sources](CATALOG-SOURCES.md).
 
 ## Contributing
 
