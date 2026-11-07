@@ -1,0 +1,55 @@
+{
+  "name": "react-movie-ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",
+    "prebuild": "npm run typecheck",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/catalog.test.ts src/App.test.tsx",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.106.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^20.0.0",
+    "@types/jsdom": "^21.1.7",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "jsdom": "^26.1.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "6.4.5"
+  },
+  "description": "React movie and TV streaming UI starter with TypeScript, TanStack Query, animated carousels and title pages.",
+  "license": "MIT",
+  "author": "rihwwn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rihwwn/react-movie-ui.git"
+  },
+  "homepage": "https://github.com/rihwwn/react-movie-ui#readme",
+  "bugs": {
+    "url": "https://github.com/rihwwn/react-movie-ui/issues"
+  },
+  "keywords": [
+    "react",
+    "movie",
+    "ui",
+    "typescript",
+    "react-query",
+    "streaming",
+    "template",
+    "carousel"
+  ]
+}

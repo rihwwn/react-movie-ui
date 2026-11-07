@@ -1,0 +1,347 @@
+[
+  {
+    "id": "digger",
+    "title": "Digger",
+    "image": "assets/digger.svg",
+    "year": 2026,
+    "duration": "2h 9m",
+    "language": "English",
+    "rating": "4.3",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Dark Comedy",
+    "description": "An oil magnate faces a spiraling disaster and a desperate attempt to repair the damage he has helped create."
+  },
+  {
+    "id": "toy-story",
+    "title": "Toy Story 5",
+    "image": "assets/toy-story.svg",
+    "year": 2026,
+    "duration": "1h 42m",
+    "language": "English",
+    "rating": "4.7",
+    "categories": [
+      "Movies",
+      "Animation",
+      "Kids"
+    ],
+    "genre": "Family · Adventure",
+    "description": "Woody, Buzz and Jessie confront a new challenge when a high-tech tablet begins to take over playtime.",
+    "backdrop": "assets/toy-story-backdrop.svg"
+  },
+  {
+    "id": "spider-man",
+    "title": "Spider-Man: Brand New Day",
+    "image": "assets/spider-man.svg",
+    "year": 2026,
+    "duration": "2h 25m",
+    "language": "English",
+    "rating": "4.6",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Action · Adventure",
+    "description": "Peter Parker protects New York alone as a mysterious threat tests the limits of his powers and his new life.",
+    "backdrop": "assets/spider-man-backdrop.svg"
+  },
+  {
+    "id": "irregular",
+    "title": "The Irregular at Magic High School: Yotsuba Succession Arc",
+    "image": "assets/irregular.svg",
+    "year": 2026,
+    "duration": "1h 43m",
+    "language": "Japanese",
+    "rating": "4.5",
+    "categories": [
+      "Movies",
+      "Anime",
+      "Animation"
+    ],
+    "genre": "Fantasy · Action",
+    "description": "An invitation to the Yotsuba family gathering draws Tatsuya and Miyuki into a conflict over inheritance, identity and magic."
+  },
+  {
+    "id": "social-reckoning",
+    "title": "The Social Reckoning",
+    "image": "assets/social-reckoning.svg",
+    "year": 2026,
+    "duration": "1h 52m",
+    "language": "English",
+    "rating": "4.4",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Drama · Thriller",
+    "description": "A whistleblower and a journalist investigate the hidden consequences of a social media empire and the power behind its screens."
+  },
+  {
+    "id": "hoppers",
+    "title": "Hoppers",
+    "image": "assets/hoppers.svg",
+    "year": 2026,
+    "duration": "1h 45m",
+    "language": "English",
+    "rating": "4.8",
+    "categories": [
+      "Movies",
+      "Animation",
+      "Kids"
+    ],
+    "genre": "Comedy · Adventure",
+    "description": "An animal lover enters the body of a robotic beaver and discovers an extraordinary community with a forest worth protecting."
+  },
+  {
+    "id": "resident-evil",
+    "title": "Resident Evil",
+    "image": "assets/resident-evil.svg",
+    "year": 2026,
+    "duration": "1h 34m",
+    "language": "English",
+    "rating": "4.2",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Horror · Survival",
+    "description": "A medical courier enters Raccoon City on a delivery that turns into a terrifying fight to survive the night."
+  },
+  {
+    "id": "apothecary",
+    "title": "The Apothecary Diaries · Season 3",
+    "image": "assets/apothecary.svg",
+    "year": 2026,
+    "duration": "Season 3",
+    "language": "Japanese",
+    "rating": "4.9",
+    "categories": [
+      "TV Shows",
+      "Anime",
+      "Animation"
+    ],
+    "genre": "Mystery · Drama",
+    "description": "Maomao returns to palace intrigue, following medical clues and dangerous secrets through a world where knowledge can change everything.",
+    "backdrop": "assets/apothecary-backdrop.svg"
+  },
+  {
+    "id": "odyssey",
+    "title": "The Odyssey",
+    "image": "assets/odyssey.svg",
+    "year": 2026,
+    "duration": "2h 53m",
+    "language": "English",
+    "rating": "4.8",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Epic · Adventure",
+    "description": "After the Trojan War, Odysseus crosses a perilous world of monsters, gods and impossible choices on his journey home.",
+    "backdrop": "assets/odyssey-backdrop.svg"
+  },
+  {
+    "id": "mario",
+    "title": "The Super Mario Galaxy Movie",
+    "image": "assets/mario.svg",
+    "year": 2026,
+    "duration": "1h 38m",
+    "language": "English",
+    "rating": "4.6",
+    "categories": [
+      "Movies",
+      "Animation",
+      "Kids"
+    ],
+    "genre": "Family · Adventure",
+    "description": "Mario and his friends set out on a cosmic adventure that takes the Mushroom Kingdom beyond the stars."
+  },
+  {
+    "id": "hail-mary",
+    "title": "Project Hail Mary",
+    "image": "assets/hail-mary.svg",
+    "year": 2026,
+    "duration": "2h 36m",
+    "language": "English",
+    "rating": "4.9",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Sci-Fi · Adventure",
+    "description": "A teacher wakes up far from Earth with no memory, then discovers an unlikely friendship and a mission to save the Sun."
+  },
+  {
+    "id": "witch-hat",
+    "title": "Witch Hat Atelier",
+    "image": "assets/witch-hat.svg",
+    "year": 2026,
+    "duration": "Season 1",
+    "language": "Japanese",
+    "rating": "4.8",
+    "categories": [
+      "TV Shows",
+      "Anime",
+      "Animation"
+    ],
+    "genre": "Fantasy · Adventure",
+    "description": "Coco discovers that magic is something people can learn, opening a beautiful and dangerous world she once thought beyond reach."
+  },
+  {
+    "id": "supergirl",
+    "title": "Supergirl",
+    "image": "assets/supergirl.svg",
+    "year": 2026,
+    "duration": "1h 48m",
+    "language": "English",
+    "rating": "4.3",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Action · Sci-Fi",
+    "description": "Kara Zor-El is drawn into an interstellar journey with a young companion whose search for justice changes their lives."
+  },
+  {
+    "id": "wildwood",
+    "title": "Wildwood",
+    "image": "assets/wildwood.svg",
+    "year": 2026,
+    "duration": "2h 12m",
+    "language": "English",
+    "rating": "4.7",
+    "categories": [
+      "Movies",
+      "Animation"
+    ],
+    "genre": "Fantasy · Adventure",
+    "description": "Prue enters a forbidden forest to rescue her baby brother and discovers a secret world of strange creatures and fragile alliances."
+  },
+  {
+    "id": "moana",
+    "title": "Moana",
+    "image": "assets/moana.svg",
+    "year": 2026,
+    "duration": "1h 55m",
+    "language": "English",
+    "rating": "4.5",
+    "categories": [
+      "Movies",
+      "Kids"
+    ],
+    "genre": "Musical · Adventure",
+    "description": "In this live-action adventure, Moana sails beyond the reef with Maui to restore balance and protect her island home.",
+    "backdrop": "assets/moana-backdrop.svg"
+  },
+  {
+    "id": "frieren",
+    "title": "Frieren: Beyond Journey's End · Season 2",
+    "image": "assets/frieren.svg",
+    "year": 2026,
+    "duration": "Season 2",
+    "language": "Japanese",
+    "rating": "4.9",
+    "categories": [
+      "TV Shows",
+      "Anime",
+      "Animation"
+    ],
+    "genre": "Fantasy · Adventure",
+    "description": "Frieren, Fern and Stark continue north, discovering that the small moments between adventures can carry the greatest meaning."
+  },
+  {
+    "id": "prada",
+    "title": "The Devil Wears Prada 2",
+    "image": "assets/prada.svg",
+    "year": 2026,
+    "duration": "1h 59m",
+    "language": "English",
+    "rating": "4.4",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Comedy · Drama",
+    "description": "Andy and Miranda cross paths again as the fashion world navigates a changing media landscape and a new balance of power."
+  },
+  {
+    "id": "minions",
+    "title": "Minions & Monsters",
+    "image": "assets/minions.svg",
+    "year": 2026,
+    "duration": "1h 29m",
+    "language": "English",
+    "rating": "4.5",
+    "categories": [
+      "Movies",
+      "Animation",
+      "Kids"
+    ],
+    "genre": "Comedy · Adventure",
+    "description": "A new group of Minions chase movie stardom in Hollywood and unleash real monsters while trying to make a monster movie."
+  },
+  {
+    "id": "dragons",
+    "title": "House of the Dragon · Season 3",
+    "image": "assets/dragons.svg",
+    "year": 2026,
+    "duration": "Season 3",
+    "language": "English",
+    "rating": "4.8",
+    "categories": [
+      "TV Shows"
+    ],
+    "genre": "Fantasy · Drama",
+    "description": "The Targaryen civil war deepens as rival rulers, divided families and their dragons face the cost of claiming the throne."
+  },
+  {
+    "id": "one-piece",
+    "title": "ONE PIECE: Into the Grand Line",
+    "image": "assets/one-piece.svg",
+    "year": 2026,
+    "duration": "Season 2",
+    "language": "English",
+    "rating": "4.7",
+    "categories": [
+      "TV Shows"
+    ],
+    "genre": "Adventure · Fantasy",
+    "description": "Luffy and the Straw Hats sail into the Grand Line, meeting unusual islands, formidable enemies and a remarkable new friend."
+  },
+  {
+    "id": "verity",
+    "title": "Verity",
+    "image": "assets/verity.svg",
+    "year": 2026,
+    "duration": "1h 57m",
+    "language": "English",
+    "rating": "4.2",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Thriller · Drama",
+    "description": "A writer hired to finish a bestselling series discovers a disturbing manuscript that blurs the boundary between fiction and the truth."
+  },
+  {
+    "id": "clayface",
+    "title": "Clayface",
+    "image": "assets/clayface.svg",
+    "year": 2026,
+    "duration": "1h 48m",
+    "language": "English",
+    "rating": "4.4",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Horror · Thriller",
+    "description": "An actor desperate to rebuild his life after an attack turns to an experimental treatment with terrifying consequences."
+  },
+  {
+    "id": "practical-magic",
+    "title": "Practical Magic 2",
+    "image": "assets/practical-magic.svg",
+    "year": 2026,
+    "duration": "2h 10m",
+    "language": "English",
+    "rating": "4.3",
+    "categories": [
+      "Movies"
+    ],
+    "genre": "Fantasy · Drama",
+    "description": "The Owens family returns to confront an old curse, with a new generation drawn into the magic that connects them."
+  }
+]
