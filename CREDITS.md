@@ -1,5 +1,9 @@
 # Asset licenses
 
+## Demo screenshot
+
+`docs/images/hero-demo.jpg` is an unmodified screenshot of the hero section from an earlier CineStream demo build. It illustrates the running interface; branding and artwork differ from this public template. Third-party artwork visible in that screenshot is not a reusable asset granted under the implementation's MIT license. The downloadable app uses the abstract SVG placeholders described below.
+
 ## Original SVG assets
 
 The abstract posters and backdrops in `public/assets/*.svg` (plus the project favicon) are code-created graphics provided with this template under MIT. They contain no official movie poster artwork. Film names and associated trademarks remain those of their respective owners.

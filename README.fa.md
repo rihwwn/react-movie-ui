@@ -2,6 +2,10 @@
 
 قالب رابط فیلم و سریال با **React، TypeScript، TanStack Query و Vite**؛ مناسب شروع یک وب‌سایت کشف فیلم یا استفاده از کامپوننت‌های آن در پروژهٔ شخصی.
 
+![بخش اول و اسلایدر فیلم‌ها در نسخهٔ قبلی دمو](docs/images/hero-demo.jpg)
+
+*اسکرین‌شات واقعی از یکی از نسخه‌های قبلی دموی CineStream است. نام و تصاویر این دمو با قالب قابل دانلود تفاوت دارند؛ قالب عمومی تصاویر SVG نمونه دارد.*
+
 [English documentation](README.md) · [مجوز فایل‌های همراه](CREDITS.md)
 
 ## اجرا
@@ -58,6 +62,34 @@ npm run preview
 برای پخش واقعی، لینک مجاز ویدیو را در پلیر جایگزین کنید. کلید محرمانهٔ سرویس‌ها باید روی backend بماند. backend مشترک می‌تواند بعداً وب و Flutter را تغذیه کند؛ کامپوننت React خودکار به Flutter تبدیل نمی‌شود.
 
 خروجی `dist/` برای میزبانی در ریشهٔ سایت آماده می‌شود. مسیر عنوان‌ها مانند `/?title=dragons` است و به rewrite مسیرهای SPA نیاز ندارد. میزبانی زیرپوشه‌ای مثل GitHub project Pages به تغییر base و مسیرهای مطلق نیاز دارد.
+
+### انتشار روی Cloudflare Workers از GitHub
+
+فایل `wrangler.jsonc` داخل مخزن آماده است و پوشهٔ `dist/` را با Workers Static Assets سرو می‌کند؛ نیازی به اضافه کردن کد Worker یا قرار دادن شناسهٔ حساب و توکن در مخزن نیست.
+
+در داشبورد Cloudflare وارد **Workers & Pages** شوید، مخزن GitHub را import کنید و تنظیمات زیر را بگذارید:
+
+| تنظیم | مقدار |
+| --- | --- |
+| مخزن | `rihwwn/react-movie-ui` یا نسخهٔ کپی خودتان |
+| شاخهٔ اصلی | `main` |
+| نام Worker | `react-movie-ui` |
+| Root directory | ریشهٔ مخزن؛ خالی یا `/` |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler@4.158.0 deploy` |
+| متغیر محیط build | `NODE_VERSION=24` |
+
+نام Worker باید با فیلد `name` در `wrangler.jsonc` یکی باشد؛ اگر نام دیگری انتخاب کردید، هر دو را تغییر دهید. Cloudflare وابستگی‌ها را از lockfile نصب می‌کند و بعد از اتصال، pushهای شاخهٔ `main` را خودکار build و منتشر می‌کند. آدرس واقعی `workers.dev` پس از انتشار موفق در داشبورد نمایش داده می‌شود.
+
+برای انتشار دستی با Node.js نسخهٔ ۲۲ یا جدیدتر:
+
+```sh
+npm run build
+npx wrangler@4.158.0 login
+npx wrangler@4.158.0 deploy
+```
+
+برای روش داشبورد، ورود محلی با Wrangler لازم نیست. تنظیم SPA fallback هم برای لینک‌های فعلی که با query کار می‌کنند لازم نیست. [راهنمای رسمی تنظیمات Build](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/)
 
 ## محدودهٔ دمو
 

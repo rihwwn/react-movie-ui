@@ -1,0 +1,8 @@
+{
+  "name": "react-movie-ui",
+  "compatibility_date": "2026-11-07",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./dist"
+  }
+}

@@ -2,6 +2,10 @@
 
 **A React movie and TV streaming UI starter with TypeScript, TanStack Query and cinematic carousels.**
 
+![Hero section and movie carousel from an earlier demo build](docs/images/hero-demo.jpg)
+
+*Actual screenshot of an earlier CineStream demo build. Branding and artwork differ from the downloadable template, which uses abstract placeholder artwork.*
+
 [راهنمای فارسی](README.fa.md) · [Asset licenses](CREDITS.md) · [MIT implementation license](LICENSE)
 
 Build a movie discovery interface, explore animated sliders, or adapt the components for your own catalog. This is a complete Vite starter app: clone it, customize it and deploy the static build. No API key is needed to run the demo.
@@ -92,6 +96,34 @@ Replace `loadCatalog`'s endpoint in `src/catalog.ts` and adapt its validator to 
 Run `npm run build`, then serve **`dist/`** from the root of a static website. Title URLs use query parameters, for example `/?title=dragons`, so title navigation does not require SPA path rewrites.
 
 The current absolute asset and navigation URLs expect a root deployment. GitHub project Pages subdirectories require URL/base adjustments before deployment.
+
+### Cloudflare Workers from GitHub
+
+The included `wrangler.jsonc` serves `dist/` using Workers Static Assets. No Worker script, account ID or secret is stored in this repository.
+
+In Cloudflare's **Workers & Pages** dashboard, import the GitHub repository and use these settings:
+
+| Setting | Value |
+| --- | --- |
+| Git repository | `rihwwn/react-movie-ui` (or your own copy) |
+| Production branch | `main` |
+| Worker name | `react-movie-ui` |
+| Root directory | Repository root; leave blank or use `/` |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler@4.158.0 deploy` |
+| Build variable | `NODE_VERSION=24` |
+
+The Worker name must match `name` in `wrangler.jsonc`; change both if you choose another name. Cloudflare installs dependencies from the committed lockfile. After the first deployment, pushes to the connected `main` branch trigger a new build and deployment. The dashboard provides the actual `workers.dev` URL once deployment succeeds.
+
+For a manual deployment on Node.js 22 or newer, build the app, sign in to your own Cloudflare account, then deploy:
+
+```sh
+npm run build
+npx wrangler@4.158.0 login
+npx wrangler@4.158.0 deploy
+```
+
+The current app uses query-based title links, so no SPA fallback setting is needed. Credentials and local Wrangler state are ignored by Git. See Cloudflare's [Workers Builds settings](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/) and [Static Assets configuration](https://developers.cloudflare.com/workers/static-assets/binding/) for the deployment contract.
 
 ## Demo limits
 
