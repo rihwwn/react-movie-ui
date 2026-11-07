@@ -2,9 +2,9 @@
 
 قالب رابط فیلم و سریال با **React، TypeScript، TanStack Query و Vite**؛ مناسب شروع یک وب‌سایت کشف فیلم یا استفاده از کامپوننت‌های آن در پروژهٔ شخصی.
 
-![بخش اول و اسلایدر فیلم‌ها در نسخهٔ قبلی دمو](docs/images/hero-demo.jpg)
+![اسلایدر فیلم‌های The Odyssey، Spider-Man: Brand New Day و Toy Story 5](docs/images/hero-movies.jpg)
 
-*اسکرین‌شات واقعی از یکی از نسخه‌های قبلی دموی CineStream است. نام و تصاویر این دمو با قالب قابل دانلود تفاوت دارند؛ قالب عمومی تصاویر SVG نمونه دارد.*
+*اسکرین‌شات واقعی دموی CineStream با فیلم‌های The Odyssey، Spider-Man: Brand New Day و Toy Story 5 است. قالب عمومی قابل دانلود، نام Movie UI و تصاویر SVG نمونه دارد.*
 
 [English documentation](README.md) · [مجوز فایل‌های همراه](CREDITS.md)
 

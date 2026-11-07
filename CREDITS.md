@@ -2,7 +2,7 @@
 
 ## Demo screenshot
 
-`docs/images/hero-demo.jpg` is an unmodified screenshot of the hero section from an earlier CineStream demo build. It illustrates the running interface; branding and artwork differ from this public template. Third-party artwork visible in that screenshot is not a reusable asset granted under the implementation's MIT license. The downloadable app uses the abstract SVG placeholders described below.
+`docs/images/hero-movies.jpg` is an unmodified screenshot of the CineStream movie-catalog demo, featuring The Odyssey, Spider-Man: Brand New Day and Toy Story 5. Branding and artwork differ from this public template. Third-party artwork visible in that screenshot is not a reusable asset granted under the implementation's MIT license. The downloadable app uses the abstract SVG placeholders described below.
 
 ## Original SVG assets
 
