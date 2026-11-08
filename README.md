@@ -4,13 +4,13 @@
 
 ![Complete hero section and carousel with The Odyssey, Spider-Man: Brand New Day and Toy Story 5](docs/images/hero-complete.jpg)
 
-*Complete hero preview rendered from the project components with current movie artwork. Entrance motion is paused for capture, and the view is scaled to include the full header, copy, carousel and navigation. The downloadable template uses abstract placeholder artwork.*
+*Complete hero preview rendered from the project components with the movie artwork included in the demo. Entrance motion is paused for capture, and the view is scaled to include the full header, copy, carousel and navigation.*
 
 [راهنمای فارسی](README.fa.md) · [Asset licenses](CREDITS.md) · [MIT implementation license](LICENSE)
 
 Build a movie discovery interface, explore animated sliders, or adapt the components for your own catalog. This is a complete Vite starter app: clone it, customize it and deploy the static build. No API key is needed to run the demo.
 
-The bundled movie artwork consists of original abstract SVG placeholders.
+The demo includes movie posters and backdrops from the original project. Artwork retains its owners' rights and is separate from the implementation's MIT license; see [asset licenses](CREDITS.md).
 
 ## Features
 
@@ -75,7 +75,7 @@ The demo fetches `/catalog.json`. A catalog entry has this shape:
 {
   id: 'my-film',
   title: 'My Film',
-  image: 'assets/my-film.svg',
+  image: 'assets/my-film.jpg',
   backdrop: 'assets/my-film-backdrop.jpg', // optional
   year: 2026,
   duration: '1h 45m',
@@ -131,13 +131,13 @@ The current app uses query-based title links, so no SPA fallback setting is need
 
 ## Demo limits
 
-The 23-title catalog is a manually curated snapshot. Scores, season totals, episode counts and episode runtimes are illustrative, not IMDb/TMDB statistics. Every film and episode plays the same CC0 sample clip. Poster and backdrop SVGs are placeholders, not official artwork.
+The 23-title catalog is a manually curated snapshot. Scores, season totals, episode counts and episode runtimes are illustrative, not IMDb/TMDB statistics. Every film and episode plays the same CC0 sample clip; movie artwork does not provide access to the actual films.
 
 Watchlists are stored in the current browser under `react-movie-ui-watchlist`; there is no account or server synchronization. This is a web interface, with no production streaming backend, subscription system, Flutter application or television app included.
 
 ## License
 
-The implementation and original placeholder SVGs are provided under [MIT](LICENSE). Film trademarks and third-party content are not granted rights by that license. Fonts and video retain their own licenses; see [asset licenses](CREDITS.md) and [catalog sources](CATALOG-SOURCES.md).
+The implementation and project favicon are provided under [MIT](LICENSE). Movie artwork, film trademarks and other third-party content are not granted rights by that license. Fonts and video retain their own licenses; see [asset licenses](CREDITS.md) and [catalog sources](CATALOG-SOURCES.md).
 
 ## Contributing
 

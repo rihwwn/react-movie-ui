@@ -2,7 +2,7 @@
   {
     "id": "digger",
     "title": "Digger",
-    "image": "assets/digger.svg",
+    "image": "assets/digger.jpg",
     "year": 2026,
     "duration": "2h 9m",
     "language": "English",
@@ -16,7 +16,7 @@
   {
     "id": "toy-story",
     "title": "Toy Story 5",
-    "image": "assets/toy-story.svg",
+    "image": "assets/toy-story.jpg",
     "year": 2026,
     "duration": "1h 42m",
     "language": "English",
@@ -28,12 +28,12 @@
     ],
     "genre": "Family · Adventure",
     "description": "Woody, Buzz and Jessie confront a new challenge when a high-tech tablet begins to take over playtime.",
-    "backdrop": "assets/toy-story-backdrop.svg"
+    "backdrop": "assets/toy-story-backdrop.jpg"
   },
   {
     "id": "spider-man",
     "title": "Spider-Man: Brand New Day",
-    "image": "assets/spider-man.svg",
+    "image": "assets/spider-man.jpg",
     "year": 2026,
     "duration": "2h 25m",
     "language": "English",
@@ -43,12 +43,12 @@
     ],
     "genre": "Action · Adventure",
     "description": "Peter Parker protects New York alone as a mysterious threat tests the limits of his powers and his new life.",
-    "backdrop": "assets/spider-man-backdrop.svg"
+    "backdrop": "assets/spider-man-backdrop.jpg"
   },
   {
     "id": "irregular",
     "title": "The Irregular at Magic High School: Yotsuba Succession Arc",
-    "image": "assets/irregular.svg",
+    "image": "assets/irregular.jpg",
     "year": 2026,
     "duration": "1h 43m",
     "language": "Japanese",
@@ -64,7 +64,7 @@
   {
     "id": "social-reckoning",
     "title": "The Social Reckoning",
-    "image": "assets/social-reckoning.svg",
+    "image": "assets/social-reckoning.jpg",
     "year": 2026,
     "duration": "1h 52m",
     "language": "English",
@@ -78,7 +78,7 @@
   {
     "id": "hoppers",
     "title": "Hoppers",
-    "image": "assets/hoppers.svg",
+    "image": "assets/hoppers.jpg",
     "year": 2026,
     "duration": "1h 45m",
     "language": "English",
@@ -94,7 +94,7 @@
   {
     "id": "resident-evil",
     "title": "Resident Evil",
-    "image": "assets/resident-evil.svg",
+    "image": "assets/resident-evil.png",
     "year": 2026,
     "duration": "1h 34m",
     "language": "English",
@@ -108,7 +108,7 @@
   {
     "id": "apothecary",
     "title": "The Apothecary Diaries · Season 3",
-    "image": "assets/apothecary.svg",
+    "image": "assets/apothecary.jpg",
     "year": 2026,
     "duration": "Season 3",
     "language": "Japanese",
@@ -120,12 +120,12 @@
     ],
     "genre": "Mystery · Drama",
     "description": "Maomao returns to palace intrigue, following medical clues and dangerous secrets through a world where knowledge can change everything.",
-    "backdrop": "assets/apothecary-backdrop.svg"
+    "backdrop": "assets/apothecary-backdrop.jpg"
   },
   {
     "id": "odyssey",
     "title": "The Odyssey",
-    "image": "assets/odyssey.svg",
+    "image": "assets/odyssey.jpg",
     "year": 2026,
     "duration": "2h 53m",
     "language": "English",
@@ -135,12 +135,12 @@
     ],
     "genre": "Epic · Adventure",
     "description": "After the Trojan War, Odysseus crosses a perilous world of monsters, gods and impossible choices on his journey home.",
-    "backdrop": "assets/odyssey-backdrop.svg"
+    "backdrop": "assets/odyssey-backdrop.jpg"
   },
   {
     "id": "mario",
     "title": "The Super Mario Galaxy Movie",
-    "image": "assets/mario.svg",
+    "image": "assets/mario.jpg",
     "year": 2026,
     "duration": "1h 38m",
     "language": "English",
@@ -156,7 +156,7 @@
   {
     "id": "hail-mary",
     "title": "Project Hail Mary",
-    "image": "assets/hail-mary.svg",
+    "image": "assets/hail-mary.jpg",
     "year": 2026,
     "duration": "2h 36m",
     "language": "English",
@@ -170,7 +170,7 @@
   {
     "id": "witch-hat",
     "title": "Witch Hat Atelier",
-    "image": "assets/witch-hat.svg",
+    "image": "assets/witch-hat.jpg",
     "year": 2026,
     "duration": "Season 1",
     "language": "Japanese",
@@ -186,7 +186,7 @@
   {
     "id": "supergirl",
     "title": "Supergirl",
-    "image": "assets/supergirl.svg",
+    "image": "assets/supergirl.jpg",
     "year": 2026,
     "duration": "1h 48m",
     "language": "English",
@@ -200,7 +200,7 @@
   {
     "id": "wildwood",
     "title": "Wildwood",
-    "image": "assets/wildwood.svg",
+    "image": "assets/wildwood.jpg",
     "year": 2026,
     "duration": "2h 12m",
     "language": "English",
@@ -215,7 +215,7 @@
   {
     "id": "moana",
     "title": "Moana",
-    "image": "assets/moana.svg",
+    "image": "assets/moana.jpg",
     "year": 2026,
     "duration": "1h 55m",
     "language": "English",
@@ -226,12 +226,12 @@
     ],
     "genre": "Musical · Adventure",
     "description": "In this live-action adventure, Moana sails beyond the reef with Maui to restore balance and protect her island home.",
-    "backdrop": "assets/moana-backdrop.svg"
+    "backdrop": "assets/moana-backdrop.jpg"
   },
   {
     "id": "frieren",
     "title": "Frieren: Beyond Journey's End · Season 2",
-    "image": "assets/frieren.svg",
+    "image": "assets/frieren.jpg",
     "year": 2026,
     "duration": "Season 2",
     "language": "Japanese",
@@ -247,7 +247,7 @@
   {
     "id": "prada",
     "title": "The Devil Wears Prada 2",
-    "image": "assets/prada.svg",
+    "image": "assets/prada.jpg",
     "year": 2026,
     "duration": "1h 59m",
     "language": "English",
@@ -261,7 +261,7 @@
   {
     "id": "minions",
     "title": "Minions & Monsters",
-    "image": "assets/minions.svg",
+    "image": "assets/minions.jpg",
     "year": 2026,
     "duration": "1h 29m",
     "language": "English",
@@ -277,7 +277,7 @@
   {
     "id": "dragons",
     "title": "House of the Dragon · Season 3",
-    "image": "assets/dragons.svg",
+    "image": "assets/dragons.jpg",
     "year": 2026,
     "duration": "Season 3",
     "language": "English",
@@ -291,7 +291,7 @@
   {
     "id": "one-piece",
     "title": "ONE PIECE: Into the Grand Line",
-    "image": "assets/one-piece.svg",
+    "image": "assets/one-piece.png",
     "year": 2026,
     "duration": "Season 2",
     "language": "English",
@@ -305,7 +305,7 @@
   {
     "id": "verity",
     "title": "Verity",
-    "image": "assets/verity.svg",
+    "image": "assets/verity.jpg",
     "year": 2026,
     "duration": "1h 57m",
     "language": "English",
@@ -319,7 +319,7 @@
   {
     "id": "clayface",
     "title": "Clayface",
-    "image": "assets/clayface.svg",
+    "image": "assets/clayface.jpg",
     "year": 2026,
     "duration": "1h 48m",
     "language": "English",
@@ -333,7 +333,7 @@
   {
     "id": "practical-magic",
     "title": "Practical Magic 2",
-    "image": "assets/practical-magic.svg",
+    "image": "assets/practical-magic.png",
     "year": 2026,
     "duration": "2h 10m",
     "language": "English",

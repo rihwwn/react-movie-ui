@@ -4,7 +4,7 @@ The 23-title catalog is a manually curated 2026 snapshot, not a live release fee
 
 Scores, season totals, episode counts, episode entries and episode runtimes are illustrative layout data. Every play button uses the same CC0 flower video.
 
-All poster and backdrop files bundled in this public template are original abstract SVG placeholders, not official movie artwork. Film titles and associated trademarks belong to their respective owners; no affiliation or endorsement is implied.
+The bundled poster and backdrop files are movie artwork from the original demo project. Film artwork, titles and associated trademarks belong to their respective owners and are not covered by the implementation's MIT license; no affiliation or endorsement is implied. See [asset licenses](CREDITS.md).
 
 ## Metadata references
 
