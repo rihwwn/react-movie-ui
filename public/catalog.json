@@ -16,7 +16,7 @@
   {
     "id": "toy-story",
     "title": "Toy Story 5",
-    "image": "assets/toy-story.jpg",
+    "image": "assets/toy-story-poster-hq.jpg",
     "year": 2026,
     "duration": "1h 42m",
     "language": "English",
@@ -28,12 +28,12 @@
     ],
     "genre": "Family · Adventure",
     "description": "Woody, Buzz and Jessie confront a new challenge when a high-tech tablet begins to take over playtime.",
-    "backdrop": "assets/toy-story-backdrop.jpg"
+    "backdrop": "assets/toy-story-hero-hq.webp"
   },
   {
     "id": "spider-man",
     "title": "Spider-Man: Brand New Day",
-    "image": "assets/spider-man-poster.jpg",
+    "image": "assets/spider-man-poster-hq.jpg",
     "year": 2026,
     "duration": "2h 25m",
     "language": "English",
@@ -43,7 +43,7 @@
     ],
     "genre": "Action · Adventure",
     "description": "Peter Parker protects New York alone as a mysterious threat tests the limits of his powers and his new life.",
-    "backdrop": "assets/spider-man-backdrop.jpg"
+    "backdrop": "assets/spider-man-hero-hq.webp"
   },
   {
     "id": "irregular",
@@ -215,7 +215,7 @@
   {
     "id": "moana",
     "title": "Moana",
-    "image": "assets/moana.jpg",
+    "image": "assets/moana-poster-hq.jpg",
     "year": 2026,
     "duration": "1h 55m",
     "language": "English",
@@ -226,7 +226,7 @@
     ],
     "genre": "Musical · Adventure",
     "description": "In this live-action adventure, Moana sails beyond the reef with Maui to restore balance and protect her island home.",
-    "backdrop": "assets/moana-backdrop.jpg"
+    "backdrop": "assets/moana-hero-hq.webp"
   },
   {
     "id": "frieren",

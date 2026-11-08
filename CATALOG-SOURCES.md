@@ -36,21 +36,26 @@ The bundled poster and backdrop files include artwork from the original demo pro
 
 ## Refreshed poster sources
 
-Fourteen low-resolution thumbnails were replaced on November 8, 2026 with larger published promotional posters. Files are stored locally without upscaling; their new filenames also avoid reusing cached thumbnails. The other posters and all landscape backdrops are unchanged.
+Low-resolution thumbnails were replaced on November 8, 2026 with larger published promotional posters. A subsequent refresh replaces both posters and hero stills for Spider-Man, Moana and Toy Story 5. The three hero images use original studio stills between 4,096 and 5,994 pixels wide, downsampled to 2,560 pixels and encoded as WebP at quality 94. No image is upscaled. New filenames avoid reusing cached artwork.
 
 | Title | Local file | Resolution | Retrieved image |
 | --- | --- | --- | --- |
-| Digger | `public/assets/digger-poster.jpg` | 1296 ? 1920 | [Source](https://movingstory-prod.imgix.net/mx/posters/digger-9bcae4e0.jpg) |
-| Spider-Man: Brand New Day | `public/assets/spider-man-poster.jpg` | 600 ? 889 | [Source](https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@._V1_.jpg) |
-| The Social Reckoning | `public/assets/social-reckoning-poster.jpg` | 600 ? 891 | [Source](https://muvitimes.com/data/upload/movies/2026/hoy.the-social-reckoning.jpg) |
-| Resident Evil | `public/assets/resident-evil-poster.jpg` | 1080 ? 1350 | [Source](https://media.kg-portal.ru/movies/r/residentevil2026/posters/residentevil2026_8.jpg) |
-| The Super Mario Galaxy Movie | `public/assets/mario-poster.jpg` | 1050 ? 1551 | [Source](https://dx35vtwkllhj9.cloudfront.net/universal-pictures-cms/the-super-mario-galaxy-movie-cms/images/regions/us/onesheet.jpg) |
-| Project Hail Mary | `public/assets/hail-mary-poster.jpg` | 1200 ? 1778 | [Source](https://m.media-amazon.com/images/M/MV5BNTkwNzJiYTctNzI3NC00NjE1LTlhYjktY2Q5MTdmMWFmNzcxXkEyXkFqcGc@._V1_QL90_UX1200_.jpg) |
-| Supergirl | `public/assets/supergirl-poster.jpg` | 1000 ? 1482 | [Source](https://m.media-amazon.com/images/M/MV5BMmJkOTE0MWUtY2E5OS00NzEyLWI4NjEtYzQzYzFmMjk5ODE3XkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg) |
-| Wildwood | `public/assets/wildwood-poster.jpg` | 1200 ? 1500 | [Source](https://de.web.img3.acsta.net/img/87/4a/874a5dd4d371e5163b2a998e5f967ae7.jpg) |
-| Minions & Monsters | `public/assets/minions-poster.jpg` | 1579 ? 2500 | [Source](https://amc-theatres-res.cloudinary.com/v1771951566/amc-cdn/content/general/tnefr30panibbpkjzgce.jpg) |
-| House of the Dragon · Season 3 | `public/assets/dragons-poster.jpg` | 2000 ? 2962 | [Source](https://cdn.mos.cms.futurecdn.net/c7CuVfrrgX2Yh3M4CdHT5c.jpg) |
-| ONE PIECE: Into the Grand Line | `public/assets/one-piece-poster.jpg` | 1350 ? 1688 | [Source](https://www.whats-on-netflix.com/wp-content/uploads/2025/05/new-poster-one-piece-images-netflix-season-2.jpeg) |
-| Verity | `public/assets/verity-poster.jpg` | 1200 ? 1778 | [Source](https://images.flickdirect.com/cache/movies/verity-2026/q82-012000-verity-2026-poster.jpg) |
-| Clayface | `public/assets/clayface-poster.jpg` | 1000 ? 1482 | [Source](https://m.media-amazon.com/images/M/MV5BMjNlMjM4NTAtYjE5YS00ZGYyLWEyMTYtNjFlMmIxZDEzYjhhXkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg) |
-| Practical Magic 2 | `public/assets/practical-magic-poster.jpg` | 850 ? 1259 | [Source](https://images.squarespace-cdn.com/content/v1/5c213a383c3a53bf091b1c36/bd9ae095-c582-4c98-940e-23a03b5de83b/pm.jpeg) |
+| Digger | `public/assets/digger-poster.jpg` | 1296 x 1920 | [Source](https://movingstory-prod.imgix.net/mx/posters/digger-9bcae4e0.jpg) |
+| The Social Reckoning | `public/assets/social-reckoning-poster.jpg` | 600 x 891 | [Source](https://muvitimes.com/data/upload/movies/2026/hoy.the-social-reckoning.jpg) |
+| Resident Evil | `public/assets/resident-evil-poster.jpg` | 1080 x 1350 | [Source](https://media.kg-portal.ru/movies/r/residentevil2026/posters/residentevil2026_8.jpg) |
+| The Super Mario Galaxy Movie | `public/assets/mario-poster.jpg` | 1050 x 1551 | [Source](https://dx35vtwkllhj9.cloudfront.net/universal-pictures-cms/the-super-mario-galaxy-movie-cms/images/regions/us/onesheet.jpg) |
+| Project Hail Mary | `public/assets/hail-mary-poster.jpg` | 1200 x 1778 | [Source](https://m.media-amazon.com/images/M/MV5BNTkwNzJiYTctNzI3NC00NjE1LTlhYjktY2Q5MTdmMWFmNzcxXkEyXkFqcGc@._V1_QL90_UX1200_.jpg) |
+| Supergirl | `public/assets/supergirl-poster.jpg` | 1000 x 1482 | [Source](https://m.media-amazon.com/images/M/MV5BMmJkOTE0MWUtY2E5OS00NzEyLWI4NjEtYzQzYzFmMjk5ODE3XkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg) |
+| Wildwood | `public/assets/wildwood-poster.jpg` | 1200 x 1500 | [Source](https://de.web.img3.acsta.net/img/87/4a/874a5dd4d371e5163b2a998e5f967ae7.jpg) |
+| Minions & Monsters | `public/assets/minions-poster.jpg` | 1579 x 2500 | [Source](https://amc-theatres-res.cloudinary.com/v1771951566/amc-cdn/content/general/tnefr30panibbpkjzgce.jpg) |
+| House of the Dragon · Season 3 | `public/assets/dragons-poster.jpg` | 2000 x 2962 | [Source](https://cdn.mos.cms.futurecdn.net/c7CuVfrrgX2Yh3M4CdHT5c.jpg) |
+| ONE PIECE: Into the Grand Line | `public/assets/one-piece-poster.jpg` | 1350 x 1688 | [Source](https://www.whats-on-netflix.com/wp-content/uploads/2025/05/new-poster-one-piece-images-netflix-season-2.jpeg) |
+| Verity | `public/assets/verity-poster.jpg` | 1200 x 1778 | [Source](https://images.flickdirect.com/cache/movies/verity-2026/q82-012000-verity-2026-poster.jpg) |
+| Clayface | `public/assets/clayface-poster.jpg` | 1000 x 1482 | [Source](https://m.media-amazon.com/images/M/MV5BMjNlMjM4NTAtYjE5YS00ZGYyLWEyMTYtNjFlMmIxZDEzYjhhXkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg) |
+| Practical Magic 2 | `public/assets/practical-magic-poster.jpg` | 850 x 1259 | [Source](https://images.squarespace-cdn.com/content/v1/5c213a383c3a53bf091b1c36/bd9ae095-c582-4c98-940e-23a03b5de83b/pm.jpeg) |
+| Toy Story 5 (poster) | `public/assets/toy-story-poster-hq.jpg` | 1086 x 1610 | [Source](https://pixarpost.com/wp-content/uploads/2026/02/Toy-Story-5-Payoff-Poster.jpg) |
+| Toy Story 5 (hero) | `public/assets/toy-story-hero-hq.webp` | 2560 x 1377 | [Source](https://thewaltdisneycompany.com/app/uploads/2026/06/TOYSTORY5-ONLINE-USE-t950-.jpg) |
+| Spider-Man: Brand New Day (poster) | `public/assets/spider-man-poster-hq.jpg` | 1333 x 2000 | [Source](https://www.sonypictures.co.uk/sites/unitedkingdom/files/2026-10/DP_10558318_SPIDER-MANBRANDNEWDAY_2000x3000_MaskKeyArt_1333x2000_thumbnail%20%281%29%20%281%29.jpg) |
+| Spider-Man: Brand New Day (hero) | `public/assets/spider-man-hero-hq.webp` | 2560 x 1073 | [Source](https://www.sonypictures.co.uk/sites/unitedkingdom/files/2026-07/Spider-Man_%20Brand%20New%20Day%20-%20Image%2014%20-%20Only%20In%20Cinemas%20July%2029_0.jpg) |
+| Moana (poster) | `public/assets/moana-poster-hq.jpg` | 1086 x 1609 | [Source](https://thewaltdisneycompany.com/app/uploads/2026/07/Moana_853_1Sheet_KeyArt_FIN04.1_FINAL_KA_Mech4.jpg) |
+| Moana (hero) | `public/assets/moana-hero-hq.webp` | 2560 x 1073 | [Source](https://thewaltdisneycompany.com/app/uploads/2026/07/MNA-T1_0028.jpg) |

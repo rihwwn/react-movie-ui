@@ -2,11 +2,11 @@
 
 ## Demo screenshot
 
-`docs/images/hero-complete.jpg` captures a static preview rendered from the project's React components with movie artwork: The Odyssey, Spider-Man: Brand New Day and Toy Story 5. Entrance motion is disabled and the view is scaled so the complete hero fits inside the frame. The downloadable app includes the same catalog artwork. Third-party artwork visible in this preview is not granted rights under the implementation's MIT license.
+`docs/images/hero-complete.jpg` captures a static preview rendered from the project's React components with movie artwork: The Odyssey, Spider-Man: Brand New Day and Toy Story 5. Entrance motion is disabled and the view is scaled so the complete hero fits inside the frame. The live demo now uses refreshed posters and studio stills for Spider-Man, Moana and Toy Story 5. Third-party artwork visible in this preview is not granted rights under the implementation's MIT license.
 
 ## Movie artwork
 
-The JPG and PNG posters and backdrops referenced by `public/catalog.json` include artwork from the original demo project and larger published promotional posters replacing fourteen low-resolution thumbnails. Image sources and resolutions for those replacements are recorded in [CATALOG-SOURCES.md](CATALOG-SOURCES.md#refreshed-poster-sources). Film artwork, names and associated trademarks belong to their respective owners and are not included in the implementation's MIT grant. This repository does not grant redistribution rights to third-party artwork.
+The JPG and PNG posters and backdrops referenced by `public/catalog.json` include artwork from the original demo project and larger published promotional posters and high-resolution studio stills replacing small posters and hero images. Image sources and output resolutions for those replacements are recorded in [CATALOG-SOURCES.md](CATALOG-SOURCES.md#refreshed-poster-sources). Film artwork, names and associated trademarks belong to their respective owners and are not included in the implementation's MIT grant. This repository does not grant redistribution rights to third-party artwork.
 
 ## Project favicon
 
