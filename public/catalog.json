@@ -2,7 +2,7 @@
   {
     "id": "digger",
     "title": "Digger",
-    "image": "assets/digger.jpg",
+    "image": "assets/digger-poster.jpg",
     "year": 2026,
     "duration": "2h 9m",
     "language": "English",
@@ -33,7 +33,7 @@
   {
     "id": "spider-man",
     "title": "Spider-Man: Brand New Day",
-    "image": "assets/spider-man.jpg",
+    "image": "assets/spider-man-poster.jpg",
     "year": 2026,
     "duration": "2h 25m",
     "language": "English",
@@ -64,7 +64,7 @@
   {
     "id": "social-reckoning",
     "title": "The Social Reckoning",
-    "image": "assets/social-reckoning.jpg",
+    "image": "assets/social-reckoning-poster.jpg",
     "year": 2026,
     "duration": "1h 52m",
     "language": "English",
@@ -94,7 +94,7 @@
   {
     "id": "resident-evil",
     "title": "Resident Evil",
-    "image": "assets/resident-evil.png",
+    "image": "assets/resident-evil-poster.jpg",
     "year": 2026,
     "duration": "1h 34m",
     "language": "English",
@@ -140,7 +140,7 @@
   {
     "id": "mario",
     "title": "The Super Mario Galaxy Movie",
-    "image": "assets/mario.jpg",
+    "image": "assets/mario-poster.jpg",
     "year": 2026,
     "duration": "1h 38m",
     "language": "English",
@@ -156,7 +156,7 @@
   {
     "id": "hail-mary",
     "title": "Project Hail Mary",
-    "image": "assets/hail-mary.jpg",
+    "image": "assets/hail-mary-poster.jpg",
     "year": 2026,
     "duration": "2h 36m",
     "language": "English",
@@ -186,7 +186,7 @@
   {
     "id": "supergirl",
     "title": "Supergirl",
-    "image": "assets/supergirl.jpg",
+    "image": "assets/supergirl-poster.jpg",
     "year": 2026,
     "duration": "1h 48m",
     "language": "English",
@@ -200,7 +200,7 @@
   {
     "id": "wildwood",
     "title": "Wildwood",
-    "image": "assets/wildwood.jpg",
+    "image": "assets/wildwood-poster.jpg",
     "year": 2026,
     "duration": "2h 12m",
     "language": "English",
@@ -261,7 +261,7 @@
   {
     "id": "minions",
     "title": "Minions & Monsters",
-    "image": "assets/minions.jpg",
+    "image": "assets/minions-poster.jpg",
     "year": 2026,
     "duration": "1h 29m",
     "language": "English",
@@ -277,7 +277,7 @@
   {
     "id": "dragons",
     "title": "House of the Dragon · Season 3",
-    "image": "assets/dragons.jpg",
+    "image": "assets/dragons-poster.jpg",
     "year": 2026,
     "duration": "Season 3",
     "language": "English",
@@ -291,7 +291,7 @@
   {
     "id": "one-piece",
     "title": "ONE PIECE: Into the Grand Line",
-    "image": "assets/one-piece.png",
+    "image": "assets/one-piece-poster.jpg",
     "year": 2026,
     "duration": "Season 2",
     "language": "English",
@@ -305,7 +305,7 @@
   {
     "id": "verity",
     "title": "Verity",
-    "image": "assets/verity.jpg",
+    "image": "assets/verity-poster.jpg",
     "year": 2026,
     "duration": "1h 57m",
     "language": "English",
@@ -319,7 +319,7 @@
   {
     "id": "clayface",
     "title": "Clayface",
-    "image": "assets/clayface.jpg",
+    "image": "assets/clayface-poster.jpg",
     "year": 2026,
     "duration": "1h 48m",
     "language": "English",
@@ -333,7 +333,7 @@
   {
     "id": "practical-magic",
     "title": "Practical Magic 2",
-    "image": "assets/practical-magic.png",
+    "image": "assets/practical-magic-poster.jpg",
     "year": 2026,
     "duration": "2h 10m",
     "language": "English",

@@ -6,7 +6,7 @@
 
 ## Movie artwork
 
-The JPG and PNG posters and backdrops referenced by `public/catalog.json` are the movie artwork used by the original demo project. Film artwork, names and associated trademarks belong to their respective owners and are not included in the implementation's MIT grant. This repository does not grant redistribution rights to third-party artwork.
+The JPG and PNG posters and backdrops referenced by `public/catalog.json` include artwork from the original demo project and larger published promotional posters replacing fourteen low-resolution thumbnails. Image sources and resolutions for those replacements are recorded in [CATALOG-SOURCES.md](CATALOG-SOURCES.md#refreshed-poster-sources). Film artwork, names and associated trademarks belong to their respective owners and are not included in the implementation's MIT grant. This repository does not grant redistribution rights to third-party artwork.
 
 ## Project favicon
 

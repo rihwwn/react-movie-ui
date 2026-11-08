@@ -10,7 +10,7 @@
 
 Build a movie discovery interface, explore animated sliders, or adapt the components for your own catalog. This is a complete Vite starter app: clone it, customize it and deploy the static build. No API key is needed to run the demo.
 
-The demo includes movie posters and backdrops from the original project. Artwork retains its owners' rights and is separate from the implementation's MIT license; see [asset licenses](CREDITS.md).
+The demo includes movie posters and backdrops, with larger published posters replacing low-resolution thumbnails. Artwork retains its owners' rights and is separate from the implementation's MIT license; see [asset licenses](CREDITS.md) and [poster sources](CATALOG-SOURCES.md#refreshed-poster-sources).
 
 ## Features
 
