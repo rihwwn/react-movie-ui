@@ -1,9 +1,11 @@
 {
   "name": "react-movie-ui",
+  "main": "src/worker.ts",
   "compatibility_date": "2026-11-07",
   "workers_dev": true,
   "assets": {
     "directory": "./dist",
-    "base_path": "/react-movie-ui"
+    "binding": "ASSETS",
+    "run_worker_first": true
   }
 }

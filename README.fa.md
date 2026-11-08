@@ -65,7 +65,7 @@ npm run preview
 
 ### انتشار روی Cloudflare Workers از GitHub
 
-فایل `wrangler.jsonc` پوشهٔ `dist/` را با Workers Static Assets و تنظیم `assets.base_path` در مسیر **`/react-movie-ui/`** سرو می‌کند. برای انتشار در ریشهٔ سایت، فیلد `base_path` را حذف کنید. نیازی به اضافه کردن کد Worker یا قرار دادن شناسهٔ حساب و توکن در مخزن نیست.
+فایل `wrangler.jsonc` و Worker کوچک تایپ‌اسکریپت در `src/worker.ts` پوشهٔ `dist/` را از طریق binding استاندارد `ASSETS` در مسیر **`/react-movie-ui/`** سرو می‌کنند. Worker پیشوند مسیر را هنگام خواندن فایل‌ها حذف می‌کند و هدایت‌ها را داخل مسیر پروژه نگه می‌دارد. این روش به قابلیت حساب‌محور `assets.base_path` نیاز ندارد. انتشار در ریشهٔ سایت و آدرس فعال `workers.dev` هم کار می‌کند. شناسهٔ حساب یا توکن در مخزن قرار نمی‌گیرد.
 
 در داشبورد Cloudflare وارد **Workers & Pages** شوید، مخزن GitHub را import کنید و تنظیمات زیر را بگذارید:
 
@@ -83,7 +83,7 @@ Cloudflare فایل `.node-version` را از ریشهٔ مخزن می‌خوا�
 
 نام Worker باید با فیلد `name` در `wrangler.jsonc` یکی باشد؛ اگر نام دیگری انتخاب کردید، هر دو را تغییر دهید. Cloudflare وابستگی‌ها را از lockfile نصب می‌کند و بعد از اتصال، pushهای شاخهٔ `main` را خودکار build و منتشر می‌کند. اگر `workers.dev` فعال باشد، `/react-movie-ui/` را به انتهای آدرس Worker اضافه کنید.
 
-برای مسیر روی دامنهٔ موجود در Cloudflare، وارد **Domains > Add > Route** شوید، Zone دامنه را انتخاب کنید و فقط الگوی پروژه را اضافه کنید؛ مثلاً `example.com/react-movie-ui*`. آدرس سایت `https://example.com/react-movie-ui/` می‌شود. اتصال دامنهٔ صفحهٔ اصلی را تغییر ندهید. [راهنمای زیرپوشه](https://developers.cloudflare.com/workers/static-assets/routing/advanced/serving-a-subdirectory/) و [Route](https://developers.cloudflare.com/workers/configuration/routing/routes/)
+برای مسیر روی دامنهٔ موجود در Cloudflare، وارد **Domains > Add > Route** شوید، Zone دامنه را انتخاب کنید و فقط الگوی پروژه را اضافه کنید؛ مثلاً `example.com/react-movie-ui*`. آدرس سایت `https://example.com/react-movie-ui/` می‌شود و Worker پیشوند مسیر را مدیریت می‌کند. اتصال دامنهٔ صفحهٔ اصلی را تغییر ندهید. برای تغییر مسیر دمو، مقدار `prefix` در `src/worker.ts` و الگوی Route را با هم تغییر دهید. این مسیریابی کد Worker را برای درخواست‌ها اجرا می‌کند و محدودیت‌های معمول درخواست‌های Workers اعمال می‌شود. [راهنمای binding فایل‌ها](https://developers.cloudflare.com/workers/static-assets/binding/) و [Route](https://developers.cloudflare.com/workers/configuration/routing/routes/)
 
 برای انتشار دستی با Node.js نسخهٔ ۲۲ یا جدیدتر:
 

@@ -11,7 +11,7 @@
     "prebuild": "npm run typecheck",
     "build": "vite build",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test src/catalog.test.ts src/App.test.tsx",
+    "test": "tsx --test src/catalog.test.ts src/App.test.tsx src/worker.test.ts",
     "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort"
   },
   "dependencies": {
