@@ -2,9 +2,9 @@
 
 **A React movie and TV streaming UI starter with TypeScript, TanStack Query and cinematic carousels.**
 
-![Movie carousel featuring The Odyssey, Spider-Man: Brand New Day and Toy Story 5](docs/images/hero-movies.jpg)
+![Complete hero section and carousel with The Odyssey, Spider-Man: Brand New Day and Toy Story 5](docs/images/hero-complete.jpg)
 
-*Actual screenshot of the CineStream movie-catalog demo, featuring The Odyssey, Spider-Man: Brand New Day and Toy Story 5. The downloadable template uses Movie UI branding and abstract placeholder artwork.*
+*Complete hero preview rendered from the project components with current movie artwork. Entrance motion is paused for capture, and the view is scaled to include the full header, copy, carousel and navigation. The downloadable template uses abstract placeholder artwork.*
 
 [راهنمای فارسی](README.fa.md) · [Asset licenses](CREDITS.md) · [MIT implementation license](LICENSE)
 

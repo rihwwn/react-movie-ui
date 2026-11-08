@@ -2,7 +2,7 @@
 
 ## Demo screenshot
 
-`docs/images/hero-movies.jpg` is an unmodified screenshot of the CineStream movie-catalog demo, featuring The Odyssey, Spider-Man: Brand New Day and Toy Story 5. Branding and artwork differ from this public template. Third-party artwork visible in that screenshot is not a reusable asset granted under the implementation's MIT license. The downloadable app uses the abstract SVG placeholders described below.
+`docs/images/hero-complete.jpg` captures a static preview rendered from the project's React components with current movie artwork: The Odyssey, Spider-Man: Brand New Day and Toy Story 5. Entrance motion is disabled and the view is scaled so the complete hero fits inside the frame. Third-party artwork visible in this preview is not a reusable asset granted under the implementation's MIT license. The downloadable app uses the abstract SVG placeholders described below.
 
 ## Original SVG assets
 
