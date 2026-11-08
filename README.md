@@ -111,7 +111,9 @@ In Cloudflare's **Workers & Pages** dashboard, import the GitHub repository and 
 | Root directory | Repository root; leave blank or use `/` |
 | Build command | `npm run build` |
 | Deploy command | `npx wrangler@4.158.0 deploy` |
-| Build variable | `NODE_VERSION=24` |
+| Node.js version | `24`, selected by the included `.node-version` file |
+
+Cloudflare reads `.node-version` from the repository root, so no Node build variable is needed. See the [Cloudflare build image documentation](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/).
 
 The Worker name must match `name` in `wrangler.jsonc`; change both if you choose another name. Cloudflare installs dependencies from the committed lockfile. After the first deployment, pushes to the connected `main` branch trigger a new build and deployment. The dashboard provides the actual `workers.dev` URL once deployment succeeds.
 

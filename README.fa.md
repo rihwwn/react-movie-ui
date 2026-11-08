@@ -77,7 +77,9 @@ npm run preview
 | Root directory | ریشهٔ مخزن؛ خالی یا `/` |
 | Build command | `npm run build` |
 | Deploy command | `npx wrangler@4.158.0 deploy` |
-| متغیر محیط build | `NODE_VERSION=24` |
+| نسخهٔ Node.js | `24`؛ از فایل `.node-version` داخل مخزن خوانده می‌شود |
+
+Cloudflare فایل `.node-version` را از ریشهٔ مخزن می‌خواند؛ لازم نیست متغیر محیطی برای نسخهٔ Node اضافه کنید. [راهنمای محیط Build در Cloudflare](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/)
 
 نام Worker باید با فیلد `name` در `wrangler.jsonc` یکی باشد؛ اگر نام دیگری انتخاب کردید، هر دو را تغییر دهید. Cloudflare وابستگی‌ها را از lockfile نصب می‌کند و بعد از اتصال، pushهای شاخهٔ `main` را خودکار build و منتشر می‌کند. آدرس واقعی `workers.dev` پس از انتشار موفق در داشبورد نمایش داده می‌شود.
 
