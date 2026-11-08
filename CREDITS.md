@@ -2,7 +2,7 @@
 
 ## Demo screenshot
 
-`docs/images/hero-complete.jpg` captures a static preview rendered from the project's React components with movie artwork: The Odyssey, Spider-Man: Brand New Day and Toy Story 5. Entrance motion is disabled and the view is scaled so the complete hero fits inside the frame. The live demo now uses refreshed posters and studio stills for Spider-Man, Moana and Toy Story 5. Third-party artwork visible in this preview is not granted rights under the implementation's MIT license.
+`docs/images/hero-high-resolution.jpg` captures a static preview rendered from the project's React components with the current movie artwork: The Odyssey, Spider-Man: Brand New Day and Toy Story 5. It includes the refreshed high-resolution Spider-Man and Toy Story studio stills. Entrance motion is disabled and the view is scaled so the complete hero fits inside the frame. Third-party artwork visible in this preview is not granted rights under the implementation's MIT license.
 
 ## Movie artwork
 

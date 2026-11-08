@@ -2,7 +2,7 @@
 
 **A React movie and TV streaming UI starter with TypeScript, TanStack Query and cinematic carousels.**
 
-![Complete hero section and carousel with The Odyssey, Spider-Man: Brand New Day and Toy Story 5](docs/images/hero-complete.jpg)
+![Complete hero section and carousel with The Odyssey, Spider-Man: Brand New Day and Toy Story 5](docs/images/hero-high-resolution.jpg)
 
 *Complete hero preview rendered from the project components with the movie artwork included in the demo. Entrance motion is paused for capture, and the view is scaled to include the full header, copy, carousel and navigation.*
 
