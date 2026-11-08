@@ -39,7 +39,7 @@ export function parseCatalog(value: unknown): Movie[] {
 
 export async function loadCatalog(signal?: AbortSignal): Promise<Movie[]> {
   // shortcut: the demo reads local JSON; replace this endpoint and image validation with the real API contract.
-  const response = await fetch('/catalog.json', { signal });
+  const response = await fetch('catalog.json', { signal });
   if (!response.ok) throw new Error('The collection could not be loaded. Please try again.');
   let data: unknown;
   try { data = await response.json(); }

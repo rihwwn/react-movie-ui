@@ -57,15 +57,15 @@ npm run preview
 
 ## اتصال API و انتشار
 
-دمو `/catalog.json` را می‌خواند. برای API واقعی، endpoint و اعتبارسنجی `src/catalog.ts` را با قرارداد سرور تطبیق دهید. اعتبارسنج فعلی فقط مسیرهای محلی `assets/` با نام انگلیسی کوچک و خط تیره و پسوند SVG، JPG، PNG یا WebP را می‌پذیرد؛ تصاویر ریموت به تنظیم قرارداد و مبدأهای مجاز نیاز دارند. مدل کامل در [راهنمای انگلیسی](README.md#connect-your-api) است.
+دمو `catalog.json` را از مسیر نصب پروژه می‌خواند. برای API واقعی، endpoint و اعتبارسنجی `src/catalog.ts` را با قرارداد سرور تطبیق دهید. اعتبارسنج فعلی فقط مسیرهای محلی `assets/` با نام انگلیسی کوچک و خط تیره و پسوند SVG، JPG، PNG یا WebP را می‌پذیرد؛ تصاویر ریموت به تنظیم قرارداد و مبدأهای مجاز نیاز دارند. مدل کامل در [راهنمای انگلیسی](README.md#connect-your-api) است.
 
 برای پخش واقعی، لینک مجاز ویدیو را در پلیر جایگزین کنید. کلید محرمانهٔ سرویس‌ها باید روی backend بماند. backend مشترک می‌تواند بعداً وب و Flutter را تغذیه کند؛ کامپوننت React خودکار به Flutter تبدیل نمی‌شود.
 
-خروجی `dist/` برای میزبانی در ریشهٔ سایت آماده می‌شود. مسیر عنوان‌ها مانند `/?title=dragons` است و به rewrite مسیرهای SPA نیاز ندارد. میزبانی زیرپوشه‌ای مثل GitHub project Pages به تغییر base و مسیرهای مطلق نیاز دارد.
+خروجی `dist/` را می‌توانید در ریشهٔ سایت یا زیرپوشه منتشر کنید؛ مسیر زیرپوشه باید با `/` تمام شود. آدرس فایل‌ها نسبی است و کاتالوگ، تصاویر، ویدیو و لینک‌ها داخل همان مسیر می‌مانند. آدرس عنوان‌ها مانند `/react-movie-ui/?title=dragons` است و به rewrite مسیرهای SPA نیاز ندارد.
 
 ### انتشار روی Cloudflare Workers از GitHub
 
-فایل `wrangler.jsonc` داخل مخزن آماده است و پوشهٔ `dist/` را با Workers Static Assets سرو می‌کند؛ نیازی به اضافه کردن کد Worker یا قرار دادن شناسهٔ حساب و توکن در مخزن نیست.
+فایل `wrangler.jsonc` پوشهٔ `dist/` را با Workers Static Assets و تنظیم `assets.base_path` در مسیر **`/react-movie-ui/`** سرو می‌کند. برای انتشار در ریشهٔ سایت، فیلد `base_path` را حذف کنید. نیازی به اضافه کردن کد Worker یا قرار دادن شناسهٔ حساب و توکن در مخزن نیست.
 
 در داشبورد Cloudflare وارد **Workers & Pages** شوید، مخزن GitHub را import کنید و تنظیمات زیر را بگذارید:
 
@@ -81,7 +81,9 @@ npm run preview
 
 Cloudflare فایل `.node-version` را از ریشهٔ مخزن می‌خواند؛ لازم نیست متغیر محیطی برای نسخهٔ Node اضافه کنید. [راهنمای محیط Build در Cloudflare](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/)
 
-نام Worker باید با فیلد `name` در `wrangler.jsonc` یکی باشد؛ اگر نام دیگری انتخاب کردید، هر دو را تغییر دهید. Cloudflare وابستگی‌ها را از lockfile نصب می‌کند و بعد از اتصال، pushهای شاخهٔ `main` را خودکار build و منتشر می‌کند. آدرس واقعی `workers.dev` پس از انتشار موفق در داشبورد نمایش داده می‌شود.
+نام Worker باید با فیلد `name` در `wrangler.jsonc` یکی باشد؛ اگر نام دیگری انتخاب کردید، هر دو را تغییر دهید. Cloudflare وابستگی‌ها را از lockfile نصب می‌کند و بعد از اتصال، pushهای شاخهٔ `main` را خودکار build و منتشر می‌کند. اگر `workers.dev` فعال باشد، `/react-movie-ui/` را به انتهای آدرس Worker اضافه کنید.
+
+برای مسیر روی دامنهٔ موجود در Cloudflare، وارد **Domains > Add > Route** شوید، Zone دامنه را انتخاب کنید و فقط الگوی پروژه را اضافه کنید؛ مثلاً `example.com/react-movie-ui*`. آدرس سایت `https://example.com/react-movie-ui/` می‌شود. اتصال دامنهٔ صفحهٔ اصلی را تغییر ندهید. [راهنمای زیرپوشه](https://developers.cloudflare.com/workers/static-assets/routing/advanced/serving-a-subdirectory/) و [Route](https://developers.cloudflare.com/workers/configuration/routing/routes/)
 
 برای انتشار دستی با Node.js نسخهٔ ۲۲ یا جدیدتر:
 

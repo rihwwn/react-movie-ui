@@ -24,7 +24,7 @@ function Lines({ lines }: { lines: readonly string[] }) {
 }
 
 function Brand({ onHome }: { onHome: () => void }) {
-  return <a className="brand" href="/#home" onClick={event => { event.preventDefault(); onHome(); }} aria-label={`${content.brand} home`}>{content.brand}<span className="brand-dot">✳</span></a>;
+  return <a className="brand" href="#home" onClick={event => { event.preventDefault(); onHome(); }} aria-label={`${content.brand} home`}>{content.brand}<span className="brand-dot">✳</span></a>;
 }
 
 function SectionHeading({ id, copy }: { id: string; copy: { eyebrow: string; title: string; description: string } }) {
@@ -131,7 +131,7 @@ export default function App() {
     <a className="skip-link" href={titleId ? '#title-content' : '#popular'}>{titleId ? 'Skip to title' : 'Skip to movies'}</a><IconDefinitions />
     <header className="header shell" id="home"><Brand onHome={() => goHome('home')} />
       <nav className="nav-pill" aria-label="Main navigation">
-        <a href="/#home" className={activeNav === 'Home' && !titleId ? 'active' : ''} aria-current={activeNav === 'Home' && !titleId ? 'page' : undefined} onClick={event => { event.preventDefault(); setActiveNav('Home'); goHome('home'); }}>Home</a>
+        <a href="#home" className={activeNav === 'Home' && !titleId ? 'active' : ''} aria-current={activeNav === 'Home' && !titleId ? 'page' : undefined} onClick={event => { event.preventDefault(); setActiveNav('Home'); goHome('home'); }}>Home</a>
         {(['Movies', 'TV Shows', 'Kids'] as const).map((item, index) => <a key={item} href="#popular" className={activeNav === item ? 'active' : ''}
           aria-current={activeNav === item ? 'page' : undefined} onClick={event => { event.preventDefault(); selectCategory(item); if (!titleId) goHome(); }}>{['Movies', 'Series', 'Kids'][index]}</a>)}
       </nav><div className="header-actions"><button className="search-button" aria-label="Search movies" onClick={() => setDialog({ type: 'search' })}><Icon name="search" /></button>
@@ -185,8 +185,8 @@ export default function App() {
     </main>
     <footer className="footer shell"><div className="footer-top"><div className="footer-brand"><Brand onHome={() => goHome('home')} /><p><Lines lines={content.footer.description} /></p><span className="demo-tag"><span /> INTERACTIVE DEMO</span></div>
       <div><h3>Discover</h3>{(['Movies', 'TV Shows', 'Kids'] as const).map((item, index) => <a key={item} href="#popular" onClick={() => selectCategory(item)}>{['Movies', 'Series', 'For the family'][index]}</a>)}</div>
-      <div><h3>Your {content.brand}</h3><button onClick={() => setDialog({ type: 'list' })}>My watchlist</button><button onClick={() => setDialog({ type: 'search' })}>Find a movie</button><a href="/#taste" onClick={event => { event.preventDefault(); goHome('taste'); }}>Our recommendations</a></div>
-      <div><h3>Explore</h3><a href="/#different" onClick={event => { event.preventDefault(); goHome('different'); }}>The experience</a><a href="/#popular" onClick={event => { event.preventDefault(); goHome(); }}>The collection</a><a href="/#home" onClick={event => { event.preventDefault(); goHome('home'); }}>Back to top ↑</a></div></div>
+      <div><h3>Your {content.brand}</h3><button onClick={() => setDialog({ type: 'list' })}>My watchlist</button><button onClick={() => setDialog({ type: 'search' })}>Find a movie</button><a href="#taste" onClick={event => { event.preventDefault(); goHome('taste'); }}>Our recommendations</a></div>
+      <div><h3>Explore</h3><a href="#different" onClick={event => { event.preventDefault(); goHome('different'); }}>The experience</a><a href="#popular" onClick={event => { event.preventDefault(); goHome(); }}>The collection</a><a href="#home" onClick={event => { event.preventDefault(); goHome('home'); }}>Back to top ↑</a></div></div>
       <div className="footer-bottom"><span>© 2026 {content.brand}</span><span>{content.footer.note}</span></div>
     </footer>
     {dialog && <SearchDialog key={dialog.type} movies={dialog.type === 'list' ? savedMovies : catalog} listMode={dialog.type === 'list'} onSelect={openMovie} onClose={() => setDialog(null)} />}

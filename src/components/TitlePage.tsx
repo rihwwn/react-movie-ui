@@ -68,7 +68,7 @@ export function TitlePage({ movie, saved, onSave, onBack, onSelect, related, red
     <div className="shell title-body">
       <nav className="title-section-nav" aria-label="Title sections"><a href="#title-story">Storyline</a>{seasons.length > 0 && <a href="#title-episodes">Episodes</a>}<a href="#title-cast">Cast & crew</a><a href="#title-facts">Details</a></nav>
       <section className="title-player" hidden={!playing} aria-labelledby="preview-heading"><div className="title-section-heading"><div><p className="eyebrow">A LITTLE PREVIEW</p><h2 id="preview-heading">{episode ? `${episode} · Demo preview` : 'Your preview is ready'}</h2></div></div>
-        <video ref={video} controls playsInline preload="none" poster={movie.backdrop ?? movie.image} onError={() => setVideoError('The sample video could not be loaded. Please try again.')}><source src="/assets/sample.mp4" type="video/mp4" />Your browser doesn't support video playback.</video>
+        <video ref={video} controls playsInline preload="none" poster={movie.backdrop ?? movie.image} onError={() => setVideoError('The sample video could not be loaded. Please try again.')}><source src="assets/sample.mp4" type="video/mp4" />Your browser doesn't support video playback.</video>
         <p className="title-demo-note">Every title and episode plays the same sample clip in this demo.</p><p role="status" className="title-player-error">{videoError}</p></section>
       <div className="title-info-grid"><div>
         <section className="title-section" id="title-story" aria-labelledby="story-heading"><p className="eyebrow">BEHIND THE TITLE</p><h2 id="story-heading">Storyline</h2><p className="title-story">{movie.description}</p>

@@ -311,3 +311,23 @@ test('preview playback failures are recoverable on the title page', async () => 
   assert.equal(screen.queryByText(/Use the player controls/), null);
   assert.equal(play.mock.callCount(), 2);
 });
+
+test('catalog, artwork, playback and home navigation stay under a deployment subpath', async () => {
+  window.history.replaceState(null, '', '/react-movie-ui/');
+  mock.method(globalThis, 'fetch', async (input: RequestInfo | URL) => {
+    assert.equal(new URL(String(input), window.location.href).pathname, '/react-movie-ui/catalog.json');
+    return new Response(JSON.stringify(data));
+  });
+  renderApp(false);
+  fireEvent.click(await screen.findByRole('button', { name: 'Explore Digger' }));
+  assert.equal(window.location.pathname, '/react-movie-ui/');
+  assert.equal(window.location.search, '?title=digger');
+  assert.match(document.querySelector<HTMLImageElement>('.title-poster')!.src, /\/react-movie-ui\/assets\//);
+  assert.equal(document.querySelector<HTMLSourceElement>('video source')!.src, 'http://localhost:4173/react-movie-ui/assets/sample.mp4');
+  const home = within(screen.getByRole('banner')).getByRole('link', { name: 'Movie UI home' });
+  assert.equal(new URL((home as HTMLAnchorElement).href).pathname, '/react-movie-ui/');
+  fireEvent.click(home);
+  assert.equal(window.location.pathname, '/react-movie-ui/');
+  assert.equal(window.location.search, '');
+  assert.ok(screen.getByRole('region', { name: 'Featured movies' }));
+});

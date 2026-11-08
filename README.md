@@ -93,13 +93,13 @@ Replace `loadCatalog`'s endpoint in `src/catalog.ts` and adapt its validator to 
 
 ### Deploy
 
-Run `npm run build`, then serve **`dist/`** from the root of a static website. Title URLs use query parameters, for example `/?title=dragons`, so title navigation does not require SPA path rewrites.
+Run `npm run build`, then serve **`dist/`** from the root or a subdirectory of a static website. The build uses relative asset URLs; subdirectory deployments must end in `/`. Title URLs use query parameters, for example `/react-movie-ui/?title=dragons`, so title navigation does not require SPA path rewrites.
 
-The current absolute asset and navigation URLs expect a root deployment. GitHub project Pages subdirectories require URL/base adjustments before deployment.
+The catalog, movie artwork, sample video and navigation stay inside the deployment directory.
 
 ### Cloudflare Workers from GitHub
 
-The included `wrangler.jsonc` serves `dist/` using Workers Static Assets. No Worker script, account ID or secret is stored in this repository.
+The included `wrangler.jsonc` serves `dist/` at **`/react-movie-ui/`** using Workers Static Assets and `assets.base_path`. Remove `base_path` if you want to serve the app at `/` instead. No Worker script, account ID or secret is stored in this repository.
 
 In Cloudflare's **Workers & Pages** dashboard, import the GitHub repository and use these settings:
 
@@ -115,7 +115,9 @@ In Cloudflare's **Workers & Pages** dashboard, import the GitHub repository and 
 
 Cloudflare reads `.node-version` from the repository root, so no Node build variable is needed. See the [Cloudflare build image documentation](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/).
 
-The Worker name must match `name` in `wrangler.jsonc`; change both if you choose another name. Cloudflare installs dependencies from the committed lockfile. After the first deployment, pushes to the connected `main` branch trigger a new build and deployment. The dashboard provides the actual `workers.dev` URL once deployment succeeds.
+The Worker name must match `name` in `wrangler.jsonc`; change both if you choose another name. Cloudflare installs dependencies from the committed lockfile. After the first deployment, pushes to the connected `main` branch trigger a new build and deployment. If `workers.dev` is enabled, append `/react-movie-ui/` to the dashboard's Worker URL.
+
+To use a path on an existing Cloudflare domain, open **Domains > Add > Route**, select your domain's zone and add only the project pattern, for example `example.com/react-movie-ui*`. The app will be available at `https://example.com/react-movie-ui/`. Route matching keeps the public path, which is handled by `assets.base_path`; do not replace the existing homepage's domain binding. See [Cloudflare subdirectory assets](https://developers.cloudflare.com/workers/static-assets/routing/advanced/serving-a-subdirectory/) and [Routes](https://developers.cloudflare.com/workers/configuration/routing/routes/).
 
 For a manual deployment on Node.js 22 or newer, build the app, sign in to your own Cloudflare account, then deploy:
 
