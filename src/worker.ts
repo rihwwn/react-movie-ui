@@ -20,6 +20,7 @@ export default {
 
     const target = new URL(location, url);
     if (target.origin !== url.origin) return response;
+    // Assets can redirect /index.html to /; keep that redirect inside the demo.
     target.pathname = prefix + target.pathname;
     const redirected = new Response(response.body, response);
     redirected.headers.set('Location', target.href);

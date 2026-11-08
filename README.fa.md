@@ -83,6 +83,8 @@ Cloudflare فایل `.node-version` را از ریشهٔ مخزن می‌خوا�
 
 نام Worker باید با فیلد `name` در `wrangler.jsonc` یکی باشد؛ اگر نام دیگری انتخاب کردید، هر دو را تغییر دهید. Cloudflare وابستگی‌ها را از lockfile نصب می‌کند و بعد از اتصال، pushهای شاخهٔ `main` را خودکار build و منتشر می‌کند. اگر `workers.dev` فعال باشد، `/react-movie-ui/` را به انتهای آدرس Worker اضافه کنید.
 
+برای انتشار خودکار، برنامهٔ GitHub با نام **Cloudflare Workers and Pages** باید به همین مخزن دسترسی داشته باشد. اگر داشبورد پیام قطع اتصال به حساب Git را نشان داد، از **Settings > Builds > Git repository > Manage** مخزن را به انتخاب‌های فعلی برنامه اضافه و ذخیره کنید. در حالت انتخاب تک‌تک مخزن‌ها، مخزن جدید خودکار به فهرست اضافه نمی‌شود.
+
 برای مسیر روی دامنهٔ موجود در Cloudflare، وارد **Domains > Add > Route** شوید، Zone دامنه را انتخاب کنید و فقط الگوی پروژه را اضافه کنید؛ مثلاً `example.com/react-movie-ui*`. آدرس سایت `https://example.com/react-movie-ui/` می‌شود و Worker پیشوند مسیر را مدیریت می‌کند. اتصال دامنهٔ صفحهٔ اصلی را تغییر ندهید. برای تغییر مسیر دمو، مقدار `prefix` در `src/worker.ts` و الگوی Route را با هم تغییر دهید. این مسیریابی کد Worker را برای درخواست‌ها اجرا می‌کند و محدودیت‌های معمول درخواست‌های Workers اعمال می‌شود. [راهنمای binding فایل‌ها](https://developers.cloudflare.com/workers/static-assets/binding/) و [Route](https://developers.cloudflare.com/workers/configuration/routing/routes/)
 
 برای انتشار دستی با Node.js نسخهٔ ۲۲ یا جدیدتر:

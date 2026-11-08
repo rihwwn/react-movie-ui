@@ -117,6 +117,8 @@ Cloudflare reads `.node-version` from the repository root, so no Node build vari
 
 The Worker name must match `name` in `wrangler.jsonc`; change both if you choose another name. Cloudflare installs dependencies from the committed lockfile. After the first deployment, pushes to the connected `main` branch trigger a new build and deployment. If `workers.dev` is enabled, append `/react-movie-ui/` to the dashboard's Worker URL.
 
+Automatic builds require the **Cloudflare Workers and Pages** GitHub App to have access to this repository. If the dashboard says the project is disconnected from your Git account, open **Settings > Builds > Git repository > Manage** and add this repository to the app's existing selection, then save. Selecting repositories individually does not automatically include newly created repositories.
+
 To use a path on an existing Cloudflare domain, open **Domains > Add > Route**, select your domain's zone and add only the project pattern, for example `example.com/react-movie-ui*`. The app will be available at `https://example.com/react-movie-ui/`. The Worker handles the public prefix; do not replace the existing homepage's domain binding. To change the demo path, update `prefix` in `src/worker.ts` and your Route pattern together. Prefix routing runs Worker code for requests, so standard Workers request limits apply. See [Static Assets bindings](https://developers.cloudflare.com/workers/static-assets/binding/) and [Routes](https://developers.cloudflare.com/workers/configuration/routing/routes/).
 
 For a manual deployment on Node.js 22 or newer, build the app, sign in to your own Cloudflare account, then deploy:
