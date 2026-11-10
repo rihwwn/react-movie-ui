@@ -2,7 +2,7 @@
   <rect width="64" height="64" rx="18" fill="#fff393"/>
   <g fill="none" stroke="#0d0e10" stroke-linecap="round" stroke-linejoin="round">
     <path d="m17 46 2-29 13 14 13-14 2 29" stroke-width="7"/>
-    <path d="m7 30 6 4m-7 4 6 2m-5 8 6-4m44-14-6 4m7 4-6 2m5 8-6-4" stroke-width="2.5"/>
+    <path d="M7 30 18 34M6 38 18 40M7 48 18 44M57 30 46 34M58 38 46 40M57 48 46 44" stroke-width="2.5"/>
   </g>
   <g fill="#0d0e10">
     <circle cx="25" cy="35" r="2.5"/>
