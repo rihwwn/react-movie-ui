@@ -1,6 +1,6 @@
 // Demo copy. Replace your site's name and marketing text here when the final content is available.
 export const siteContent = {
-  brand: 'Movie UI',
+  brand: 'Meovie',
   metaTitle: 'Movie & TV Streaming UI',
   metaDescription: 'Discover your next favorite story. Explore our movie collection.',
   hero: {

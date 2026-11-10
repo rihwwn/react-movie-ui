@@ -280,7 +280,7 @@ test('browser back and forward restore the collection and title, and direct link
   cleanup();
   renderApp();
   assert.ok(screen.getByRole('heading', { name: 'Digger', level: 1 }));
-  assert.equal(document.querySelector('title')?.textContent, 'Digger (2026) — Movie UI');
+  assert.equal(document.querySelector('title')?.textContent, 'Digger (2026) — Meovie');
 });
 
 test('direct title links recover from fetch errors and unknown titles return to the collection', async () => {
@@ -324,7 +324,7 @@ test('catalog, artwork, playback and home navigation stay under a deployment sub
   assert.equal(window.location.search, '?title=digger');
   assert.match(document.querySelector<HTMLImageElement>('.title-poster')!.src, /\/react-movie-ui\/assets\//);
   assert.equal(document.querySelector<HTMLSourceElement>('video source')!.src, 'http://localhost:4173/react-movie-ui/assets/sample.mp4');
-  const home = within(screen.getByRole('banner')).getByRole('link', { name: 'Movie UI home' });
+  const home = within(screen.getByRole('banner')).getByRole('link', { name: 'Meovie home' });
   assert.equal(new URL((home as HTMLAnchorElement).href).pathname, '/react-movie-ui/');
   fireEvent.click(home);
   assert.equal(window.location.pathname, '/react-movie-ui/');

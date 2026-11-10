@@ -1,4 +1,4 @@
-# React Movie UI
+# Meovie — React Movie UI
 
 **A React movie and TV streaming UI starter with TypeScript, TanStack Query and cinematic carousels.**
 

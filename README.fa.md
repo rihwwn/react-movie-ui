@@ -1,4 +1,4 @@
-# React Movie UI
+# Meovie — React Movie UI
 
 قالب رابط فیلم و سریال با **React، TypeScript، TanStack Query و Vite**؛ مناسب شروع یک وب‌سایت کشف فیلم یا استفاده از کامپوننت‌های آن در پروژهٔ شخصی.
 
