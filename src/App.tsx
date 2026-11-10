@@ -24,7 +24,7 @@ function Lines({ lines }: { lines: readonly string[] }) {
 }
 
 function Brand({ onHome }: { onHome: () => void }) {
-  return <a className="brand" href="#home" onClick={event => { event.preventDefault(); onHome(); }} aria-label={`${content.brand} home`}><img className="brand-mark" src="assets/favicon.svg?v=meovie" width="30" height="30" alt="" />{content.brand}</a>;
+  return <a className="brand" href="#home" onClick={event => { event.preventDefault(); onHome(); }} aria-label={`${content.brand} home`}><img className="brand-mark" src="assets/favicon.svg?v=meovie-cat" width="30" height="30" alt="" />{content.brand}</a>;
 }
 
 function SectionHeading({ id, copy }: { id: string; copy: { eyebrow: string; title: string; description: string } }) {
