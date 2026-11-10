@@ -200,4 +200,3 @@
   .meeu-carousel .taste-art, .meeu-carousel .taste-navigation { opacity: 1; transform: none; }
 }
 @media(prefers-reduced-motion:reduce){.meeu-carousel *,.meeu-carousel *::before,.meeu-carousel *::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}}
-
