@@ -5,7 +5,7 @@ import { readFile } from 'node:fs/promises';
 import data from '../public/catalog.json';
 import { siteContent } from './content';
 import { titleDetails } from './titleDetails';
-import { catalogQuery, filterTitles, loadCatalog, parseCatalog, slideOffset, splitMovieRows } from './catalog';
+import { catalogQuery, filterTitles, loadCatalog, parseCatalog, splitMovieRows } from './catalog';
 
 const catalog = parseCatalog(data);
 afterEach(() => mock.restoreAll());
@@ -18,9 +18,7 @@ test('search and category filters work together', () => {
   assert.equal(filterTitles(catalog, 'Movies', 'no-such-title').length, 0);
 });
 
-test('carousel wraparound and moving rows preserve all filtered titles', () => {
-  assert.equal(slideOffset(0, 4, 5), 1);
-  assert.equal(slideOffset(4, 0, 5), -1);
+test('moving rows preserve all filtered titles', () => {
   for (const count of [0, 1, 2, 5, 9, 10]) {
     const titles = catalog.slice(0, count);
     const rows = splitMovieRows(titles);

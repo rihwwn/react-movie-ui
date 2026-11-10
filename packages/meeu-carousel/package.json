@@ -1,0 +1,25 @@
+{
+  "name": "@rihwwn/meeu-carousel",
+  "version": "0.1.0",
+  "description": "Cinematic React carousels with expanding hero cards, curved recommendations, swipe and staged text animations.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./style.css": "./dist/style.css"
+  },
+  "files": ["dist", "LICENSE"],
+  "sideEffects": ["**/*.css"],
+  "peerDependencies": { "react": "^18.2.0 || ^19.0.0" },
+  "scripts": { "build": "node build.mjs", "prepack": "npm run build" },
+  "license": "MIT",
+  "author": "rihwwn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rihwwn/react-movie-ui.git",
+    "directory": "packages/meeu-carousel"
+  },
+  "keywords": ["react", "carousel", "slider", "movie", "cinema", "typescript"],
+  "publishConfig": { "access": "public" }
+}

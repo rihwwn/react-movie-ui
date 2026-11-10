@@ -1,6 +1,7 @@
 .sites-runtime/
 node_modules/
 dist/
+*.tgz
 *.tsbuildinfo
 *.log
 .env

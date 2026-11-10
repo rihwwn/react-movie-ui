@@ -8,6 +8,28 @@
 
 [English documentation](README.md) · [مجوز فایل‌های همراه](CREDITS.md)
 
+## استفاده فقط از اسلایدر
+
+پکیج مستقل **Meeu Carousel** در مسیر [`packages/meeu-carousel`](packages/meeu-carousel) همین مخزن قرار دارد و خود دمو هم از آن استفاده می‌کند. برای نصب در پروژهٔ React خودتان:
+
+```sh
+npm install https://github.com/rihwwn/react-movie-ui/releases/download/meeu-carousel-v0.1.0/rihwwn-meeu-carousel-0.1.0.tgz
+```
+
+```tsx
+import { CinemaCarousel } from '@rihwwn/meeu-carousel';
+import '@rihwwn/meeu-carousel/style.css';
+
+<CinemaCarousel items={[
+  { id: 'one', title: 'فیلم اول', image: '/poster.jpg', backdrop: '/wide.jpg' },
+  { id: 'two', title: 'فیلم دوم', image: '/another-poster.jpg' },
+]} onSelect={item => console.log(item.id)} />;
+```
+
+تصاویر را در پروژهٔ خودتان قرار دهید. برای مدل پوسترهای منحنی، `variant="taste"` را اضافه کنید. این پکیج به React وابسته است و برند، تصاویر فیلم‌ها، فونت و React Query را همراه خودش نصب نمی‌کند. خروجی‌های بسته‌بندی‌شده در Releases همین مخزن هستند؛ پکیج هنوز در رجیستری npm منتشر نشده است.
+
+برای ساخت فایل نصب از سورس، در ریشهٔ همین مخزن `npm ci` و سپس `npm run pack:carousel` را اجرا کنید؛ فایل `.tgz` ساخته‌شده را در پروژهٔ مقصد نصب کنید. [راهنمای کامل پکیج](packages/meeu-carousel)
+
 ## اجرا
 
 Node.js نسخهٔ ۲۰ یا جدیدتر لازم است؛ پیشنهاد می‌شود از یک نسخهٔ LTS پشتیبانی‌شده استفاده کنید.
@@ -50,6 +72,8 @@ npm run preview
 | `public/catalog.json` | کاتالوگ، دسته‌ها و مسیر تصاویر |
 | `src/titleDetails.ts` | عوامل و اطلاعات نمایشی فصل‌ها |
 | `src/styles.css` | ظاهر، واکنش‌گرایی و انیمیشن‌ها |
+| `packages/meeu-carousel/src/` | رفتار اسلایدرها، تایپ‌ها و CSS مستقل پکیج |
+| `src/components/Carousel.tsx` | تبدیل داده و متن‌های دمو برای پکیج |
 | `src/catalog.ts` | مدل داده، endpoint و اعتبارسنجی API |
 | `src/components/TitlePage.tsx` | جزئیات عنوان، قسمت‌ها و پلیر |
 

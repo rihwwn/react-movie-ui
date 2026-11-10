@@ -10,14 +10,19 @@
     "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",
     "prebuild": "npm run typecheck",
     "build": "vite build",
-    "typecheck": "tsc --noEmit",
-    "test": "tsx --test src/catalog.test.ts src/App.test.tsx src/worker.test.ts",
-    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort"
+    "typecheck": "npm run build:carousel && tsc --noEmit",
+    "test": "tsx --test src/catalog.test.ts src/App.test.tsx src/worker.test.ts src/carousel.test.tsx",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "build:carousel": "npm run build --workspace @rihwwn/meeu-carousel",
+    "predev": "npm run build:carousel",
+    "pretest": "npm run build:carousel",
+    "pack:carousel": "npm pack --workspace @rihwwn/meeu-carousel"
   },
   "dependencies": {
     "@tanstack/react-query": "5.106.0",
     "react": "19.3.1",
-    "react-dom": "19.3.1"
+    "react-dom": "19.3.1",
+    "@rihwwn/meeu-carousel": "0.1.0"
   },
   "devDependencies": {
     "@testing-library/react": "^16.3.0",
@@ -51,5 +56,8 @@
     "streaming",
     "template",
     "carousel"
+  ],
+  "workspaces": [
+    "packages/*"
   ]
 }

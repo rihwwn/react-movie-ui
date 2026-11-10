@@ -8,7 +8,7 @@
 
 [راهنمای فارسی](README.fa.md) · [Asset licenses](CREDITS.md) · [MIT implementation license](LICENSE)
 
-Build a movie discovery interface, explore animated sliders, or adapt the components for your own catalog. This is a complete Vite starter app: clone it, customize it and deploy the static build. No API key is needed to run the demo.
+Build a movie discovery interface, explore animated sliders, or adapt the components for your own catalog. This repository contains the complete Vite starter app and the independent [Meeu Carousel React package](packages/meeu-carousel). No API key is needed to run the demo.
 
 The demo includes movie posters and backdrops, with larger published posters replacing low-resolution thumbnails. Artwork retains its owners' rights and is separate from the implementation's MIT license; see [asset licenses](CREDITS.md) and [poster sources](CATALOG-SOURCES.md#refreshed-poster-sources).
 
@@ -53,6 +53,26 @@ Open **http://localhost:4173**. No environment variables or backend are required
 
 Development and preview use the same port. Stop one before starting the other.
 
+## Use just the carousel
+
+Install the component archive from this repository's release:
+
+```sh
+npm install https://github.com/rihwwn/react-movie-ui/releases/download/meeu-carousel-v0.1.0/rihwwn-meeu-carousel-0.1.0.tgz
+```
+
+```tsx
+import { CinemaCarousel } from '@rihwwn/meeu-carousel';
+import '@rihwwn/meeu-carousel/style.css';
+
+<CinemaCarousel items={[
+  { id: 'one', title: 'Your story', image: '/poster.jpg', backdrop: '/wide.jpg' },
+  { id: 'two', title: 'Another story', image: '/another-poster.jpg' },
+]} onSelect={item => console.log(item.id)} />;
+```
+
+Use `variant="taste"` for the portrait slider. The package needs React and the images you provide; it has no TanStack Query, font or movie-catalog dependency. It is not published to the npm registry yet. See [package documentation](packages/meeu-carousel) for props, styling and building a local `.tgz` with `npm run pack:carousel`.
+
 ## Customize
 
 | File | What to change |
@@ -61,11 +81,12 @@ Development and preview use the same port. Stop one before starting the other.
 | `public/catalog.json` | Titles, categories, summaries, ratings and artwork paths |
 | `src/titleDetails.ts` | Cast, lead credits, country and demo episode counts |
 | `src/styles.css` | Layout, colors, typography, responsive rules and motion |
-| `src/components/Carousel.tsx` | Hero and recommendation slider behavior |
+| `packages/meeu-carousel/src/` | Shared slider behavior, types and scoped CSS |
+| `src/components/Carousel.tsx` | Adapt demo movie data and labels to the package |
 | `src/components/TitlePage.tsx` | Details, seasons, episodes and the sample player |
 | `src/catalog.ts` | Data types, validation, fetch endpoint and Query configuration |
 
-Keep IDs in `content.ts` and `titleDetails.ts` in sync with the catalog when replacing the demo data. Components and their styles can also be copied into an existing React app; this release does not provide an npm component package.
+Keep IDs in `content.ts` and `titleDetails.ts` in sync with the catalog when replacing the demo data. The root app uses npm workspaces to import the carousel package from `packages/meeu-carousel`; both live in this repository.
 
 ### Connect your API
 

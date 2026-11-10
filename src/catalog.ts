@@ -59,10 +59,6 @@ export function filterTitles(titles: Movie[], category: Category | null = 'Movie
     `${movie.title} ${movie.genre}`.toLowerCase().includes(search));
 }
 
-export function slideOffset(index: number, current: number, count: number) {
-  return ((index - current + Math.floor(count / 2) + count) % count) - Math.floor(count / 2);
-}
-
 export function splitMovieRows(titles: Movie[]) {
   if (!titles.length) return [];
   if (titles.length < 10) return [titles];
