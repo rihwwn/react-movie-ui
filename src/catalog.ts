@@ -54,9 +54,9 @@ export const catalogQuery = queryOptions({
 });
 
 export function filterTitles(titles: Movie[], category: Category | null = 'Movies', query = '') {
-  const search = query.trim().toLowerCase();
+  const terms = query.trim().toLowerCase().split(/\s+/);
   return titles.filter(movie => (!category || movie.categories.includes(category)) &&
-    `${movie.title} ${movie.genre}`.toLowerCase().includes(search));
+    terms.every(term => `${movie.title} ${movie.genre}`.toLowerCase().includes(term)));
 }
 
 export function splitMovieRows(titles: Movie[]) {

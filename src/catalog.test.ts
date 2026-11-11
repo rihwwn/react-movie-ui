@@ -18,6 +18,15 @@ test('search and category filters work together', () => {
   assert.equal(filterTitles(catalog, 'Movies', 'no-such-title').length, 0);
 });
 
+test('search matches every word across titles and genres regardless of order or spacing', () => {
+  for (const query of ['Spider Man', '  MAN   spider  ', 'spider adventure']) {
+    assert.deepEqual(filterTitles(catalog, null, query).map(movie => movie.id), ['spider-man']);
+  }
+  assert.equal(filterTitles(catalog, null, 'spider missing').length, 0);
+  assert.equal(filterTitles(catalog, 'Anime', 'Spider Man').length, 0);
+  assert.deepEqual(filterTitles(catalog, null, '   '), catalog);
+});
+
 test('moving rows preserve all filtered titles', () => {
   for (const count of [0, 1, 2, 5, 9, 10]) {
     const titles = catalog.slice(0, count);
